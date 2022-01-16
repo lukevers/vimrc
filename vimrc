@@ -44,13 +44,11 @@ set expandtab
 set number
 
 " colors
-set t_Co=256
 set termguicolors
 set background=dark
 colorscheme fairyfloss
 
-set guifont=Source\ Code\ Pro\ \Light:h11
-let g:Powerline_symbols = 'fancy'
+set guifont=Source\ Code\ Pro:h11
 
 " show tabs visually
 set list lcs=tab:\┆·
