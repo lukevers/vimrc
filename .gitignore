@@ -1,0 +1,5 @@
+.DS_Store
+
+vim/bundle/*
+vim/backup/*
+vim/swap/*
