@@ -52,6 +52,10 @@ colorscheme fairyfloss
 set list lcs=tab:\┆·
 highlight SpecialKey ctermfg=59 guifg=#65737e
 
+" Remove right hand and left hand scrollbars
+set guioptions-=r
+set go-=L
+
 " backup/swap files
 set backup
 set backupdir=~/.vim/backup/
