@@ -64,7 +64,7 @@ set backupdir=~/.vim/backup/
 set directory=~/.vim/swap/
 
 " NERDTree
-nmap <C-b> :NERDTreeToggle<cr>
+nmap <C-n> :NERDTreeToggle<cr>
 let NERDTreeShowHidden=1
 let NERDTreeMouseMode=2
 let NERDTreeKeepTreenInNewTab=1
