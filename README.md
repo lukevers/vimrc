@@ -28,5 +28,5 @@ yarn
 4. Install coc plugins. Inside of vim:
 
 ```vim
-:CocInstall coc-eslint
+:CocInstall coc-eslint coc-json coc-tsserver coc-prisma
 ```

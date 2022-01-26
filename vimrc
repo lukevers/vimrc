@@ -14,6 +14,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tssm/fairyfloss.vim'
 Plugin 't9md/vim-choosewin'
+Plugin 'pantharshit00/vim-prisma'
 
 call vundle#end()
 filetype plugin indent on
@@ -89,3 +90,8 @@ set noshowmode
 let g:choosewin_overlay_enable = 1
 nmap  -  <Plug>(choosewin)
 
+" Add `:Format` command to format current buffer.
+command! -nargs=0 Format :call CocActionAsync('format')
+
+" Run COC Format on save
+autocmd BufWritePost * call CocActionAsync('format')
