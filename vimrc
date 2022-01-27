@@ -93,5 +93,6 @@ nmap  -  <Plug>(choosewin)
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocActionAsync('format')
 
-" Run COC Format on save
-autocmd BufWritePost * call CocActionAsync('format')
+" Run COC Format on save--needed for a few things that don't work on their
+" own.
+autocmd BufWritePost *.prisma call CocActionAsync('format')
