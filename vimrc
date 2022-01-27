@@ -95,4 +95,4 @@ command! -nargs=0 Format :call CocActionAsync('format')
 
 " Run COC Format on save--needed for a few things that don't work on their
 " own.
-autocmd BufWritePost *.prisma call CocActionAsync('format')
+autocmd BufWritePre *.prisma call CocActionAsync('format')
