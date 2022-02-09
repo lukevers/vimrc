@@ -71,6 +71,8 @@ let NERDTreeMouseMode=2
 let NERDTreeKeepTreenInNewTab=1
 autocmd VimEnter * if !argc() | NERDTree | endif
 
+let NERDTreeIgnore = ['\.DS_Store']
+
 let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
