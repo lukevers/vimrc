@@ -14,6 +14,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tssm/fairyfloss.vim'
 Plugin 't9md/vim-choosewin'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
 
 call vundle#end()
 filetype plugin indent on
@@ -89,3 +91,6 @@ set noshowmode
 let g:choosewin_overlay_enable = 1
 nmap  -  <Plug>(choosewin)
 
+
+" set filetypes as typescriptreact
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
