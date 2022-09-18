@@ -16,6 +16,7 @@ Plugin 'tssm/fairyfloss.vim'
 Plugin 't9md/vim-choosewin'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'peitalin/vim-jsx-typescript'
+Plugin 'pantharshit00/vim-prisma'
 
 call vundle#end()
 filetype plugin indent on
@@ -72,6 +73,8 @@ let NERDTreeMouseMode=2
 let NERDTreeKeepTreenInNewTab=1
 autocmd VimEnter * if !argc() | NERDTree | endif
 
+let NERDTreeIgnore = ['\.DS_Store']
+
 let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
@@ -91,6 +94,12 @@ set noshowmode
 let g:choosewin_overlay_enable = 1
 nmap  -  <Plug>(choosewin)
 
-
 " set filetypes as typescriptreact
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
+
+" Add `:Format` command to format current buffer.
+command! -nargs=0 Format :call CocActionAsync('format')
+
+" Run COC Format on save--needed for a few things that don't work on their
+" own.
+autocmd BufWritePre *.prisma call CocActionAsync('format')

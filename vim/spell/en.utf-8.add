@@ -1,0 +1,15 @@
+enum
+Contentful
+graphql
+base64
+utf
+HMAC
+sha256
+utf8
+ENV
+ERD
+env
+dotenv
+contentful
+params
+eslint
